@@ -53,6 +53,32 @@ function App() {
           <p>mini sumary of information</p>
         </div>
       </div>
+
+      <div className="images">
+        <div className="images__img"></div>
+        <div className="images__text">
+          <h3>title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            exercitationem neque deserunt, nemo expedita velit. Cupiditate, illo
+            tenetur hic minima beatae quas ullam ipsam in officia dolor.
+            Necessitatibus, laborum deserunt.
+          </p>
+        </div>
+      </div>
+
+      <div className="images">
+        <div className="images__text">
+          <h3>title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            exercitationem neque deserunt, nemo expedita velit. Cupiditate, illo
+            tenetur hic minima beatae quas ullam ipsam in officia dolor.
+            Necessitatibus, laborum deserunt.
+          </p>
+        </div>
+        <div className="images__img"></div>
+      </div>
     </div>
   );
 }

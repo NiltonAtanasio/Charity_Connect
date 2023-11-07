@@ -69,3 +69,22 @@
   border-radius: 50%;
   background-color: aliceblue;
 }
+
+.images {
+  height: 55vh;
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.images__img {
+  width: 50%;
+}
+
+.images__text {
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
