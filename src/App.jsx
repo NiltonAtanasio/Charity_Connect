@@ -28,7 +28,31 @@ function App() {
         <div className="main__image"></div>
       </div>
 
-      <div className="titles"></div>
+      <div className="titles">
+        <div className="titles__card">
+          <div className="titles__card__image"></div>
+          <h4>Title</h4>
+          <p>mini sumary of information</p>
+        </div>
+
+        <div className="titles__card">
+          <div className="titles__card__image"></div>
+          <h4>Title</h4>
+          <p>mini sumary of information</p>
+        </div>
+
+        <div className="titles__card">
+          <div className="titles__card__image"></div>
+          <h4>Title</h4>
+          <p>mini sumary of information</p>
+        </div>
+
+        <div className="titles__card">
+          <div className="titles__card__image"></div>
+          <h4>Title</h4>
+          <p>mini sumary of information</p>
+        </div>
+      </div>
     </div>
   );
 }
