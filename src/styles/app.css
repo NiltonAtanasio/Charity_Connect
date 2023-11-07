@@ -1,0 +1,38 @@
+.nav {
+  height: 12vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.main {
+  height: 70vh;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__text {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.main__image {
+  width: 300px;
+  height: 300px;
+  border: solid 1px black;
+}
