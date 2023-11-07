@@ -1,0 +1,81 @@
+.nav {
+  height: 12vh;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.login__card {
+  width: 500px;
+  height: 300px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__card form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.login__card form input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.login__card form input:focus {
+  outline: none;
+}
+
+.login__card button {
+  letter-spacing: 1px;
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 35vh;
+  padding: 20px 10px;
+  background-color: #d9d9d9;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.footer div p {
+  margin: 0;
+}
+
+.footer div h4 {
+  margin: 0 0 5px;
+  text-decoration: underline;
+}
+
+.footer__icon div {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
