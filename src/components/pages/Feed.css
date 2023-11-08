@@ -1,0 +1,148 @@
+.top__bar {
+  height: 12vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 25px;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.top__bar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__logo {
+  width: 300px;
+}
+
+.container__logo input {
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 30px;
+  transition: width 0.4s ease-in-out;
+  background-color: #d9d9d9;
+}
+
+.container__logo input:focus {
+  width: 190px;
+  outline: none;
+}
+
+.top__bar__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+}
+
+.container__icon {
+  width: 400px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.avatar__g {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 25px;
+  background-color: #d9d9d9;
+}
+
+.main__publicity {
+  height: 500px;
+  background-color: #fff;
+  width: 250px;
+}
+
+.main__posts {
+  height: 500px;
+  background-color: #d9d9d9;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stories {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #fff;
+}
+.stories .avatar__g {
+  background-color: #d9d9d9;
+}
+
+.create__post {
+  padding: 10px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 70px;
+}
+.create__post input {
+  border: none;
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out;
+  background-color: #d9d9d9;
+}
+
+.create__post input:focus {
+  width: 190px;
+  outline: none;
+}
+.main__pages {
+  height: 500px;
+  background-color: #fff;
+  width: 250px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 35vh;
+  padding: 20px 10px;
+  background-color: #d9d9d9;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.footer div p {
+  margin: 0;
+}
+
+.footer div h4 {
+  margin: 0 0 5px;
+  text-decoration: underline;
+}
+
+.footer__icon div {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+}
