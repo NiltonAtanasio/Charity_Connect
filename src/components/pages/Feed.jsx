@@ -61,6 +61,19 @@ export default function Feed() {
             </div>
 
             <div className="post__image"></div>
+
+            <div className="post__bottom">
+              <div className="top__bar__icon"></div>
+              <p>config info</p>
+            </div>
+            <div className="post__bottom">
+              <div className="top__bar__icon"></div>
+              <p>config info</p>
+            </div>
+            <div className="post__bottom">
+              <div className="top__bar__icon"></div>
+              <p>config info</p>
+            </div>
           </div>
         </div>
         <div className="main__pages"></div>
