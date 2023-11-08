@@ -16,7 +16,8 @@
 
 .login__card {
   width: 500px;
-  height: 300px;
+  height: auto;
+  padding: 10px;
   margin: 50px auto;
   display: flex;
   align-items: center;
@@ -34,7 +35,7 @@
 .login__card form input {
   border: none;
   border-bottom: 1px solid black;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .login__card form input:focus {
@@ -42,9 +43,8 @@
 }
 
 .login__card button {
-  letter-spacing: 1px;
   border-radius: 20px;
-  height: 300px;
+  height: 35px;
   width: 200px;
   border: none;
 }
