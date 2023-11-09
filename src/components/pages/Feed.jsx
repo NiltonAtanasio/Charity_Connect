@@ -22,7 +22,18 @@ export default function Feed() {
       </div>
 
       <div className="main">
-        <div className="main__publicity"></div>
+        <div className="main__publicity">
+          <h4>publicity</h4>
+          <p>about publicity</p>
+          <div className="publicity__image"></div>
+          <div className="publicity__icons">
+            <div className="top__bar__icon"></div>
+            <div className="top__bar__icon"></div>
+            <div className="top__bar__icon"></div>
+          </div>
+          <p>about publicity</p>
+        </div>
+
         <div className="main__posts">
           <div className="stories">
             <div className="avatar__g"></div>
@@ -76,26 +87,8 @@ export default function Feed() {
             </div>
           </div>
         </div>
+
         <div className="main__pages"></div>
-      </div>
-      <div className="footer">
-        <div>
-          <h4>Menu</h4>
-          <p>Home</p>
-          <p>About</p>
-          <p>FAQs</p>
-          <p>Login</p>
-        </div>
-        <div className="footer__icon">
-          <h4>Follow us</h4>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p>Contact us</p>
-        </div>
       </div>
     </div>
   );
