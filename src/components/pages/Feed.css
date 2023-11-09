@@ -183,7 +183,26 @@
 }
 
 .main__pages {
-  height: 500px;
+  height: 220px;
   background-color: #fff;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.about__page {
+  width: 100%;
+  height: 190px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.about__page h4,
+.about__page p {
+  margin: 0;
 }

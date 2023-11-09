@@ -88,7 +88,19 @@ export default function Feed() {
           </div>
         </div>
 
-        <div className="main__pages"></div>
+        <div className="main__pages">
+          <div className="about__page">
+            <h4>Page Name</h4>
+            <p>About Page</p>
+            <div className="avatar__g"></div>
+            <div className="publicity__icons">
+              <div className="top__bar__icon"></div>
+              <div className="top__bar__icon"></div>
+              <div className="top__bar__icon"></div>
+            </div>
+            <p>About Page</p>
+          </div>
+        </div>
       </div>
     </div>
   );
