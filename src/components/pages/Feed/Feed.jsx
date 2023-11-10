@@ -1,25 +1,11 @@
 import React from "react";
 import "./Feed.css";
+import Topbar from "../../Topbar/Topbar";
 
 export default function Feed() {
   return (
     <div>
-      <div className="top__bar">
-        <div className="top__bar__container container__logo">
-          <div className="avatar__g"></div>
-          <input type="text" />
-        </div>
-        <div className="top__bar__container container__icon">
-          <div className="top__bar__icon"></div>
-          <div className="top__bar__icon"></div>
-          <div className="top__bar__icon"></div>
-          <div className="top__bar__icon avatar__g"></div>
-          <div className="top__bar__icon"></div>
-          <div className="top__bar__icon"></div>
-          <div className="top__bar__icon"></div>
-        </div>
-        <div className="container__logo"></div>
-      </div>
+      <Topbar />
 
       <div className="main">
         <div className="main__publicity">

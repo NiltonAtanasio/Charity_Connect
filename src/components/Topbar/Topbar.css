@@ -1,0 +1,54 @@
+.top__bar {
+  height: 12vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 25px;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.top__bar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.container__logo {
+  width: 300px;
+}
+
+.container__logo input {
+  border: none;
+  width: 150px;
+  height: 25px;
+  border-radius: 30px;
+  transition: width 0.4s ease-in-out;
+  background-color: #d9d9d9;
+}
+
+.container__logo input:focus {
+  width: 190px;
+  outline: none;
+}
+
+.top__bar__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+}
+
+.container__icon {
+  width: 400px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.avatar__g {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
