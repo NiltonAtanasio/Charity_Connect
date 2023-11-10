@@ -2,13 +2,14 @@ import React from "react";
 import "./Feed.css";
 import Topbar from "../../Topbar/Topbar";
 import Post from "../../Post/Post";
+import Main from "../../Main/Main";
 
 export default function Feed() {
   return (
     <div>
       <Topbar />
 
-      <div className="main">
+      <Main>
         <div className="main__publicity">
           <h4>publicity</h4>
           <p>about publicity</p>
@@ -55,7 +56,7 @@ export default function Feed() {
             <p>About Page</p>
           </div>
         </div>
-      </div>
+      </Main>
     </div>
   );
 }

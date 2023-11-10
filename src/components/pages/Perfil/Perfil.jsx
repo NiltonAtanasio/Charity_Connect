@@ -2,13 +2,14 @@ import React from "react";
 import "./Perfil.css";
 import Topbar from "../../Topbar/Topbar";
 import Post from "../../Post/Post";
+import Main from "../../Main/Main";
 
 export default function Perfil() {
   return (
     <div>
       <Topbar />
 
-      <div className="main">
+      <Main direction="column">
         <div className="perfil__capa">
           <div className="avatar__g"></div>
         </div>
@@ -58,7 +59,7 @@ export default function Perfil() {
         </div>
 
         <Post />
-      </div>
+      </Main>
     </div>
   );
 }

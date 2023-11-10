@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 15px 15px;
+  width: 550px;
 }
 
 .post__info {
