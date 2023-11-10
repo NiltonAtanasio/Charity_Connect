@@ -14,7 +14,7 @@
   gap: 25px;
 }
 
-.main {
+.main__home {
   height: 80vh;
   background-color: #fff;
   display: flex;

@@ -1,4 +1,4 @@
-.main__publicity {
+.feed__publicity {
   height: 400px;
   background-color: #fff;
   width: 250px;
@@ -7,10 +7,11 @@
   align-items: center;
   padding: 15px;
   gap: 10px;
+  border-radius: 10px;
 }
 
-.main__publicity h4,
-.main__publicity p {
+.feed__publicity h4,
+.feed__publicity p {
   margin: 0;
 }
 
@@ -26,12 +27,26 @@
   justify-content: space-evenly;
 }
 
-.main__posts {
+.top__bar__icon {
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+}
+
+.avatar__g {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.feed__posts {
   height: auto;
   background-color: #d9d9d9;
   width: 550px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
 }
 
@@ -43,6 +58,7 @@
   justify-content: center;
   height: 80px;
   background-color: #fff;
+  border-radius: 10px;
 }
 .stories .avatar__g {
   background-color: #d9d9d9;
@@ -50,12 +66,14 @@
 
 .create__post {
   padding: 10px;
+  width: 100%;
   height: 80px;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 70px;
+  border-radius: 10px;
 }
 .create__post input {
   border: none;
@@ -69,13 +87,14 @@
   outline: none;
 }
 
-.main__pages {
+.feed__pages {
   height: 220px;
   background-color: #fff;
   width: 250px;
   display: flex;
   flex-direction: column;
   padding: 15px;
+  border-radius: 10px;
 }
 
 .about__page {

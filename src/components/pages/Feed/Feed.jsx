@@ -10,7 +10,7 @@ export default function Feed() {
       <Topbar />
 
       <Main>
-        <div className="main__publicity">
+        <div className="feed__publicity">
           <h4>publicity</h4>
           <p>about publicity</p>
           <div className="publicity__image"></div>
@@ -22,7 +22,7 @@ export default function Feed() {
           <p>about publicity</p>
         </div>
 
-        <div className="main__posts">
+        <div className="feed__posts">
           <div className="stories">
             <div className="avatar__g"></div>
             <div className="avatar__g"></div>
@@ -43,7 +43,7 @@ export default function Feed() {
           <Post />
         </div>
 
-        <div className="main__pages">
+        <div className="feed__pages">
           <div className="about__page">
             <h4>Page Name</h4>
             <p>About Page</p>

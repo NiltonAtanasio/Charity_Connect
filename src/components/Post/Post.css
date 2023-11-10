@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   padding: 15px 15px;
   width: 550px;
+  border-radius: 10px;
 }
 
 .post__info {

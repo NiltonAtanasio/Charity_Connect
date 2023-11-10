@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="main">
+      <div className="main__home">
         <div className="main__text">
           <h1>
             O grupo CharityConnect ajuda as pessoas a se conectarem, encontrarem

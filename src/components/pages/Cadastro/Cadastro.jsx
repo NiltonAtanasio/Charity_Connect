@@ -16,7 +16,7 @@ export default function Cadastro() {
         </div>
       </div>
 
-      <div className="login__card">
+      <div className="cadastro__card">
         <form action="">
           <h2>Create an Account</h2>
           <input
