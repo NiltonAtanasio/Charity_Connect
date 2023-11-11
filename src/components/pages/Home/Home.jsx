@@ -1,20 +1,13 @@
 import React from "react";
 import "./Home.css";
 
+import Nav from "../Nav/Nav";
+import Button from "../../Button/Button";
+
 export default function Home() {
   return (
     <div>
-      <div className="nav">
-        <div className="nav__logo">
-          <h3>logo</h3>
-        </div>
-        <div className="nav__menu">
-          <h3>Home</h3>
-          <h3>About</h3>
-          <h3>FAQs</h3>
-          <h3>Login</h3>
-        </div>
-      </div>
+      <Nav />
 
       <div className="main__home">
         <div className="main__text">
@@ -22,7 +15,7 @@ export default function Home() {
             O grupo CharityConnect ajuda as pessoas a se conectarem, encontrarem
             comunidades e expandirem seu alcance
           </h1>
-          <button>Cadastrar</button>
+          <Button text="Cadastrar" />
         </div>
         <div className="main__image"></div>
       </div>
@@ -56,7 +49,7 @@ export default function Home() {
       <div className="images">
         <div className="images__img"></div>
         <div className="images__text">
-          <h3>title</h3>
+          <h4>title</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
             exercitationem neque deserunt, nemo expedita velit. Cupiditate, illo
@@ -68,7 +61,7 @@ export default function Home() {
 
       <div className="images">
         <div className="images__text">
-          <h3>title</h3>
+          <h4>title</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
             exercitationem neque deserunt, nemo expedita velit. Cupiditate, illo

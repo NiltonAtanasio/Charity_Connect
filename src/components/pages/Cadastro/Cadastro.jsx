@@ -1,20 +1,12 @@
 import React from "react";
 import "./Cadastro.css";
 
+import Nav from "../Nav/Nav";
+
 export default function Cadastro() {
   return (
     <div>
-      <div className="nav">
-        <div className="nav__logo">
-          <h3>logo</h3>
-        </div>
-        <div className="nav__menu">
-          <h3>Home</h3>
-          <h3>About</h3>
-          <h3>FAQs</h3>
-          <h3>Login</h3>
-        </div>
-      </div>
+      <Nav />
 
       <div className="cadastro__card">
         <form action="">

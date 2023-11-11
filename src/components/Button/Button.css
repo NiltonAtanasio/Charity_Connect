@@ -1,0 +1,10 @@
+button {
+  letter-spacing: 1px;
+  border-radius: 20px;
+  height: 35px;
+  width: 200px;
+  border: none;
+  background-color: #478ed4;
+  color: #fff;
+  font-weight: bold;
+}
