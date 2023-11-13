@@ -75,6 +75,10 @@
   line-height: 23px;
 }
 
+.perfil__stories h4,
+.perfil__bio h4 {
+  color: #000;
+}
 .perfil__stories {
   display: flex;
   width: 320px;

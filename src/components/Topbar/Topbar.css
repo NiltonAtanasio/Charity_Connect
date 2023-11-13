@@ -1,6 +1,6 @@
 .top__bar {
   height: 12vh;
-  background-color: #fff;
+  background-color: #004080;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,7 +26,7 @@
   height: 25px;
   border-radius: 30px;
   transition: width 0.4s ease-in-out;
-  background-color: #d9d9d9;
+  background-color: #fff;
 }
 
 .container__logo input:focus {
@@ -37,7 +37,7 @@
 .top__bar__icon {
   width: 30px;
   height: 30px;
-  background-color: #d9d9d9;
+  background-color: #fff;
 }
 
 .container__icon {

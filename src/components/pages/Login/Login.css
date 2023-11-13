@@ -26,20 +26,11 @@
   outline: none;
 }
 
-.login__card button {
-  letter-spacing: 1px;
-  border-radius: 20px;
-  height: 35px;
-  width: 200px;
-  border: none;
-}
-
 .footer {
   display: flex;
   justify-content: space-around;
   height: 35vh;
   padding: 20px 10px;
-  background-color: #d9d9d9;
 }
 
 .footer div {

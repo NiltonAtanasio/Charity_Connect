@@ -2,6 +2,7 @@ import React from "react";
 import "./Cadastro.css";
 
 import Nav from "../Nav/Nav";
+import Button from "../../Button/Button";
 
 export default function Cadastro() {
   return (
@@ -38,7 +39,7 @@ export default function Cadastro() {
             required
             min={6}
           />
-          <button>Create My Account</button>
+          <Button text="Create My Account" />
         </form>
       </div>
 

@@ -1,20 +1,13 @@
 import React from "react";
 import "./Login.css";
 
+import Nav from "../Nav/Nav";
+import Button from "../../Button/Button";
+
 export default function Login() {
   return (
     <div>
-      <div className="nav">
-        <div className="nav__logo">
-          <h3>logo</h3>
-        </div>
-        <div className="nav__menu">
-          <h3>Home</h3>
-          <h3>About</h3>
-          <h3>FAQs</h3>
-          <h3>Login</h3>
-        </div>
-      </div>
+      <Nav />
 
       <div className="login__card">
         <form action="">
@@ -34,7 +27,7 @@ export default function Login() {
             required
             min={6}
           />
-          <button>Login</button>
+          <Button text="Login" />
         </form>
       </div>
 

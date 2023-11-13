@@ -26,13 +26,6 @@
   outline: none;
 }
 
-.cadastro__card button {
-  border-radius: 20px;
-  height: 35px;
-  width: 200px;
-  border: none;
-}
-
 .footer {
   display: flex;
   justify-content: space-around;

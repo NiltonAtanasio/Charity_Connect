@@ -19,4 +19,9 @@
 .post__comment h4,
 .post__comment p {
   margin: 0;
+  color: #000000;
+}
+
+.post__comment h4 {
+  font-size: 18px;
 }
