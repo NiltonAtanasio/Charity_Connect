@@ -3,6 +3,7 @@ import "./Login.css";
 
 import Nav from "../../Nav/Nav";
 import Button from "../../Button/Button";
+import Footer from "../../Footer/Footer";
 
 export default function Login() {
   return (
@@ -31,25 +32,7 @@ export default function Login() {
         </form>
       </div>
 
-      <div className="footer">
-        <div>
-          <h4>Menu</h4>
-          <p>Home</p>
-          <p>About</p>
-          <p>FAQs</p>
-          <p>Login</p>
-        </div>
-        <div className="footer__icon">
-          <h4>Follow us</h4>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p>Contact us</p>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

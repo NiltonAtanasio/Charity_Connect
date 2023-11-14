@@ -1,6 +1,7 @@
 import React from "react";
 import "./Topbar.css";
 import logo from "../../images/logo.png";
+import Avatar from "../Avatar/Avatar";
 
 export default function Topbar() {
   return (
@@ -14,7 +15,7 @@ export default function Topbar() {
         <div className="top__bar__icon"></div>
         <div className="top__bar__icon"></div>
         <div className="top__bar__icon"></div>
-        <div className="top__bar__icon avatar__g"></div>
+        <Avatar />
         <div className="top__bar__icon"></div>
         <div className="top__bar__icon"></div>
         <div className="top__bar__icon"></div>
