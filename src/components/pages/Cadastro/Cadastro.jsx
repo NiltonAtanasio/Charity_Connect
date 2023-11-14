@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cadastro.css";
 
-import Nav from "../Nav/Nav";
+import Nav from "../../Nav/Nav";
 import Button from "../../Button/Button";
 
 export default function Cadastro() {

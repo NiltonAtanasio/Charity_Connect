@@ -1,6 +1,6 @@
 .main__home {
   height: 80vh;
-  background-color: #fff;
+  background-color: #a0c8c1;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -13,6 +13,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  color: #587d1a;
 }
 
 .main__image {
@@ -23,12 +24,12 @@
 
 .titles {
   height: 70vh;
-  background-color: #004080;
+  background-color: #a0c8c1;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  color: #fff;
+  color: #000;
 }
 
 .titles__card {
@@ -43,8 +44,9 @@
 }
 
 h4 {
-  color: #805000;
+  color: #587d1a;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .titles__card h4,
@@ -76,8 +78,8 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #004080;
-  color: #fff;
+  background-color: #a0c8c1;
+  color: #000;
 }
 
 .footer {
@@ -85,7 +87,7 @@ h4 {
   justify-content: space-around;
   height: 35vh;
   padding: 20px 10px;
-  background-color: #004080;
+  background-color: #1d3c3e;
   color: #fff;
 }
 

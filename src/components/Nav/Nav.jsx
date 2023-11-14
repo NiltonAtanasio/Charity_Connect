@@ -1,11 +1,15 @@
 import React from "react";
 import "./Nav.css";
+import logo from "../../images/logo.png";
 
 export default function Nav() {
   return (
     <div className="nav">
       <div className="nav__logo">
-        <h3>logo</h3>
+        <img
+          src={logo}
+          alt="logo com uma arvore colorida na frente com destaque e prédios atrás"
+        />
       </div>
       <div className="nav__menu">
         <h3>Home</h3>
