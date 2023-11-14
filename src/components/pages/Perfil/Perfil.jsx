@@ -3,6 +3,7 @@ import "./Perfil.css";
 import Topbar from "../../Topbar/Topbar";
 import Post from "../../Post/Post";
 import Main from "../../Main/Main";
+import Avatar from "../../Avatar/Avatar";
 
 export default function Perfil() {
   return (
@@ -11,7 +12,7 @@ export default function Perfil() {
 
       <Main direction="column">
         <div className="perfil__capa">
-          <div className="avatar__g"></div>
+          <Avatar size="g" />
         </div>
 
         <div className="perfil__name">
@@ -39,19 +40,19 @@ export default function Perfil() {
             <h4>Destaques</h4>
             <div className="stories__container">
               <div className="stories__card">
-                <div className="avatar__g"></div>
+                <Avatar />
                 <p>nome</p>
               </div>
               <div className="stories__card">
-                <div className="avatar__g"></div>
+                <Avatar />
                 <p>nome</p>
               </div>
               <div className="stories__card">
-                <div className="avatar__g"></div>
+                <Avatar />
                 <p>nome</p>
               </div>
               <div className="stories__card">
-                <div className="avatar__g"></div>
+                <Avatar />
                 <p>nome</p>
               </div>
             </div>

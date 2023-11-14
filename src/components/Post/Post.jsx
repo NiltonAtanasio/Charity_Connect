@@ -1,6 +1,7 @@
 import React from "react";
 import "./Post.css";
 import Avatar from "../Avatar/Avatar";
+import { FaHeart, FaComments, FaBookmark } from "react-icons/fa";
 
 export default function Post() {
   return (
@@ -26,16 +27,20 @@ export default function Post() {
       <div className="post__image"></div>
 
       <div className="post__bottom">
-        <div className="top__bar__icon"></div>
-        <p>config info</p>
-      </div>
-      <div className="post__bottom">
-        <div className="top__bar__icon"></div>
-        <p>config info</p>
-      </div>
-      <div className="post__bottom">
-        <div className="top__bar__icon"></div>
-        <p>config info</p>
+        <div>
+          <FaHeart className="top__bar__icon" />
+          <p>2 - Likes</p>
+        </div>
+
+        <div>
+          <FaComments className="top__bar__icon" />
+          <p>1 - comments</p>
+        </div>
+
+        <div>
+          <FaBookmark className="top__bar__icon" />
+          <p>2 - favorite</p>
+        </div>
       </div>
     </div>
   );
