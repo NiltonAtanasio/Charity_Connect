@@ -40,9 +40,10 @@
 }
 
 .top__bar__icon {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  color: #587d1a;
+  background-color: #ffffff00;
 }
 
 .container__input {
