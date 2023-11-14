@@ -7,7 +7,7 @@
 }
 
 .main__text {
-  width: 400px;
+  width: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,9 +17,13 @@
 }
 
 .main__image {
-  width: 400px;
+  width: 450px;
   height: 300px;
-  border: solid 1px black;
+}
+
+.main__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .titles {
@@ -54,13 +58,6 @@ h4 {
   margin: 10px 0 0;
 }
 
-.titles__card__image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #fff;
-}
-
 .images {
   height: 80vh;
   display: flex;
@@ -80,36 +77,4 @@ h4 {
   justify-content: center;
   background-color: #a0c8c1;
   color: #000;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  height: 35vh;
-  padding: 20px 10px;
-  background-color: #1d3c3e;
-  color: #fff;
-}
-
-.footer div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5px;
-}
-
-.footer div p {
-  margin: 0;
-}
-
-.footer div h4 {
-  margin: 0 0 5px;
-  text-decoration: underline;
-}
-
-.footer__icon div {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
 }

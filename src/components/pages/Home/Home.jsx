@@ -3,6 +3,9 @@ import "./Home.css";
 
 import Nav from "../../Nav/Nav";
 import Button from "../../Button/Button";
+import logo from "../../../images/logo.png";
+import Avatar from "../../Avatar/Avatar";
+import Footer from "../../Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,30 +20,32 @@ export default function Home() {
           </h1>
           <Button text="Cadastrar" />
         </div>
-        <div className="main__image"></div>
+        <div className="main__image">
+          <img src={logo} alt="" />
+        </div>
       </div>
 
       <div className="titles">
         <div className="titles__card">
-          <div className="titles__card__image"></div>
+          <Avatar />
           <h4>Title</h4>
           <p>mini sumary of information</p>
         </div>
 
         <div className="titles__card">
-          <div className="titles__card__image"></div>
+          <Avatar />
           <h4>Title</h4>
           <p>mini sumary of information</p>
         </div>
 
         <div className="titles__card">
-          <div className="titles__card__image"></div>
+          <Avatar />
           <h4>Title</h4>
           <p>mini sumary of information</p>
         </div>
 
         <div className="titles__card">
-          <div className="titles__card__image"></div>
+          <Avatar />
           <h4>Title</h4>
           <p>mini sumary of information</p>
         </div>
@@ -72,25 +77,7 @@ export default function Home() {
         <div className="images__img"></div>
       </div>
 
-      <div className="footer">
-        <div>
-          <h4>Menu</h4>
-          <p>Home</p>
-          <p>About</p>
-          <p>FAQs</p>
-          <p>Login</p>
-        </div>
-        <div className="footer__icon">
-          <h4>Follow us</h4>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div>
-          <h4>Contact</h4>
-          <p>Contact us</p>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }

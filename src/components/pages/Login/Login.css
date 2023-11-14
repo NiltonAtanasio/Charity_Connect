@@ -25,33 +25,3 @@
 .login__card form input:focus {
   outline: none;
 }
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  height: 35vh;
-  padding: 20px 10px;
-}
-
-.footer div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 5px;
-}
-
-.footer div p {
-  margin: 0;
-}
-
-.footer div h4 {
-  margin: 0 0 5px;
-  text-decoration: underline;
-}
-
-.footer__icon div {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-}
