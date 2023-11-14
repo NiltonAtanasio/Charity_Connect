@@ -6,14 +6,17 @@ import { IoMdNotifications, IoMdMenu } from "react-icons/io";
 import { FaHome, FaUserFriends } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 import { MdPayments } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
     <div className="top__bar">
       <div className="container__logo">
-        <div>
-          <img src={logo} alt="" />
-        </div>
+        <Link to={"/"}>
+          <div>
+            <img src={logo} alt="" />
+          </div>
+        </Link>
       </div>
       <div className="container__icon">
         <IoMdNotifications className="top__bar__icon" />
