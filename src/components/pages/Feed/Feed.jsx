@@ -4,6 +4,8 @@ import Topbar from "../../Topbar/Topbar";
 import Post from "../../Post/Post";
 import Main from "../../Main/Main";
 
+import { HiCursorClick } from "react-icons/hi";
+
 export default function Feed() {
   return (
     <div>
@@ -15,9 +17,7 @@ export default function Feed() {
           <p>about publicity</p>
           <div className="publicity__image"></div>
           <div className="publicity__icons">
-            <div className="top__bar__icon"></div>
-            <div className="top__bar__icon"></div>
-            <div className="top__bar__icon"></div>
+            <HiCursorClick className="top__bar__icon" />
           </div>
           <p>about publicity</p>
         </div>
