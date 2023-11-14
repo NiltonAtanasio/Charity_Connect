@@ -5,6 +5,9 @@ import Post from "../../Post/Post";
 import Main from "../../Main/Main";
 
 import { HiCursorClick } from "react-icons/hi";
+import { AiFillMessage } from "react-icons/ai";
+import { RiUserFollowFill } from "react-icons/ri";
+import Avatar from "../../Avatar/Avatar";
 
 export default function Feed() {
   return (
@@ -24,15 +27,15 @@ export default function Feed() {
 
         <div className="feed__posts">
           <div className="stories">
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
-            <div className="avatar__g"></div>
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
+            <Avatar />
           </div>
 
           <div className="create__post">
@@ -47,11 +50,11 @@ export default function Feed() {
           <div className="about__page">
             <h4>Page Name</h4>
             <p>About Page</p>
-            <div className="avatar__g"></div>
+            <Avatar />
             <div className="publicity__icons">
-              <div className="top__bar__icon"></div>
-              <div className="top__bar__icon"></div>
-              <div className="top__bar__icon"></div>
+              <RiUserFollowFill className="top__bar__icon" />
+              <HiCursorClick className="top__bar__icon" />
+              <AiFillMessage className="top__bar__icon" />
             </div>
             <p>About Page</p>
           </div>

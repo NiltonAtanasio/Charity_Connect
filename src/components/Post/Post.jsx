@@ -1,11 +1,12 @@
 import React from "react";
 import "./Post.css";
+import Avatar from "../Avatar/Avatar";
 
 export default function Post() {
   return (
     <div className="post">
       <div className="post__info">
-        <div className="avatar__g"></div>
+        <Avatar />
         <h3>User_Name</h3>
         <p>- 2 h</p>
       </div>
