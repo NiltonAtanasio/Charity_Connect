@@ -1,18 +1,18 @@
 import React from "react";
 import "./Topbar.css";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import Avatar from "../Avatar/Avatar";
 import { IoMdNotifications, IoMdMenu } from "react-icons/io";
 import { FaHome, FaUserFriends } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
 import { MdPayments } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
     <div className="top__bar">
       <div className="container__logo">
-        <Link to={"/"}>
+        <Link to={"/feed"}>
           <div>
             <img src={logo} alt="" />
           </div>
@@ -21,11 +21,15 @@ export default function Topbar() {
       <div className="container__icon">
         <IoMdNotifications className="top__bar__icon" />
 
-        <FaHome className="top__bar__icon" />
+        <Link to={"/feed"}>
+          <FaHome className="top__bar__icon" />
+        </Link>
 
         <FaUserFriends className="top__bar__icon" />
 
-        <Avatar />
+        <Link to={`/perfil/id`}>
+          <Avatar />
+        </Link>
 
         <AiFillMessage className="top__bar__icon" />
 

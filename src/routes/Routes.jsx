@@ -7,6 +7,7 @@ import Home from "../components/pages/Home/Home";
 import Login from "../components/pages/Login/Login";
 import Perfil from "../components/pages/Perfil/Perfil";
 import PostId from "../components/pages/PostId/PostId";
+import NotFound from "../components/pages/NotFound/NotFound";
 
 export default function ControladorDeRotas() {
   return (
@@ -17,6 +18,7 @@ export default function ControladorDeRotas() {
       <Route path="/feed" element={<Feed />} />
       <Route path="/post/:id" element={<PostId />} />
       <Route path="/perfil/:id" element={<Perfil />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
