@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../../Nav/Nav";
-import Footer from "../../Footer/Footer";
+import Nav from "../../components/Nav/Nav";
+import Footer from "../../components/Footer/Footer";
 import "./NotFound.css";
 
 export default function NotFound() {

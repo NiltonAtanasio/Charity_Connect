@@ -1,19 +1,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Cadastro from "../components/pages/Cadastro/Cadastro";
-import Feed from "../components/pages/Feed/Feed";
-import Home from "../components/pages/Home/Home";
-import Login from "../components/pages/Login/Login";
-import Perfil from "../components/pages/Perfil/Perfil";
-import PostId from "../components/pages/PostId/PostId";
-import NotFound from "../components/pages/NotFound/NotFound";
+import Register from "../pages/Register/Register.jsx";
+import Feed from "../pages/Feed/Feed.jsx";
+import Home from "../pages/Home/Home.jsx";
+import Login from "../pages/Login/Login.jsx";
+import Perfil from "../pages/Perfil/Perfil.jsx";
+import PostId from "../pages/PostId/PostId.jsx";
+import NotFound from "../pages/NotFound/NotFound.jsx";
 
 export default function ControladorDeRotas() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/feed" element={<Feed />} />
       <Route path="/post/:id" element={<PostId />} />

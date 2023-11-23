@@ -1,11 +1,11 @@
 import React from "react";
 import "./Home.css";
 
-import Nav from "../../Nav/Nav";
-import Button from "../../Button/Button";
-import logo from "../../../images/logo.png";
-import Avatar from "../../Avatar/Avatar";
-import Footer from "../../Footer/Footer";
+import Nav from "../../components/Nav/Nav";
+import Button from "../../components/Button/Button";
+import logo from "../../images/logo.png";
+import Avatar from "../../components/Avatar/Avatar";
+import Footer from "../../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             O grupo CharityConnect ajuda as pessoas a se conectarem, encontrarem
             comunidades e expandirem seu alcance
           </h1>
-          <Button text="Cadastrar" link="cadastro" />
+          <Button type="button" text="register" link="register" />
         </div>
         <div className="main__image">
           <img src={logo} alt="" />

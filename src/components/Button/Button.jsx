@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Button.css";
+import { ButtonStyled } from "./ButtonStyled.jsx";
 
-export default function Button(props) {
+export default function Button({ link, type, text }) {
   return (
-    <button>
-      <Link to={`/${props.link}`}>{props.text}</Link>
-    </button>
+    <ButtonStyled type={type}>
+      <Link to={`/${link}`}>{text}</Link>
+    </ButtonStyled>
   );
 }

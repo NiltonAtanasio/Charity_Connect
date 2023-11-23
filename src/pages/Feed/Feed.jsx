@@ -1,15 +1,15 @@
 import React from "react";
 import "./Feed.css";
-import Topbar from "../../Topbar/Topbar";
-import Post from "../../Post/Post";
-import Main from "../../Main/Main";
+import Topbar from "../../components/Topbar/Topbar.jsx";
+import Post from "../../components/Post/Post";
+import Main from "../../components/Main/Main";
 
-import { postData } from "../../Post/postData.js";
+import { postData } from "../../components/Post/postData.js";
 
 import { HiCursorClick } from "react-icons/hi";
 import { AiFillMessage } from "react-icons/ai";
 import { RiUserFollowFill } from "react-icons/ri";
-import Avatar from "../../Avatar/Avatar";
+import Avatar from "../../components/Avatar/Avatar";
 
 export default function Feed() {
   return (

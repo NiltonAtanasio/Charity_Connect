@@ -27,7 +27,7 @@ export default function Topbar() {
 
         <FaUserFriends className="top__bar__icon" />
 
-        <Link to={`/perfil/id`}>
+        <Link to={"/perfil/1"}>
           <Avatar />
         </Link>
 
