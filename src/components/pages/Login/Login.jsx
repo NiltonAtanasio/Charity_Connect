@@ -28,7 +28,7 @@ export default function Login() {
             required
             min={6}
           />
-          <Button text="Login" />
+          <Button text="Login" link="feed" />
         </form>
       </div>
 

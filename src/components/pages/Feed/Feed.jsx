@@ -4,6 +4,8 @@ import Topbar from "../../Topbar/Topbar";
 import Post from "../../Post/Post";
 import Main from "../../Main/Main";
 
+import { postData } from "../../Post/postData.js";
+
 import { HiCursorClick } from "react-icons/hi";
 import { AiFillMessage } from "react-icons/ai";
 import { RiUserFollowFill } from "react-icons/ri";
@@ -42,8 +44,9 @@ export default function Feed() {
             <input type="text" />
             <button>O</button>
           </div>
-
-          <Post />
+          {postData.map((item, index) => (
+            <Post key={index} post={item} />
+          ))}
         </div>
 
         <div className="feed__pages">

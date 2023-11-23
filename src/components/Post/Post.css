@@ -41,6 +41,10 @@
   height: 300px;
 }
 
+.post__image > img {
+  height: 100%;
+  width: 100%;
+}
 .post__bottom {
   width: 100%;
   display: flex;

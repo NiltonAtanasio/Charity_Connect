@@ -15,13 +15,13 @@ export default function Cadastro() {
           <h2>Create an Account</h2>
           <input
             type="text"
-            name="first__name"
+            name="name"
             placeholder="Your first name"
             required
           />
           <input
             type="text"
-            name="last__name"
+            name="userName"
             placeholder="Your last name"
             required
           />
@@ -35,12 +35,13 @@ export default function Cadastro() {
           />
           <input
             type="password"
-            name="password"
+            name="confirmPassword"
             placeholder="Confirm password"
             required
             min={6}
           />
-          <Button text="Create My Account" />
+          <input type="url" name="avatar" placeholder="Your avatar" required />
+          <Button text="Create My Account" link="login" />
         </form>
       </div>
 

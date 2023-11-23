@@ -1,6 +1,5 @@
 .avatar {
   border-radius: 50%;
-  border: 1px solid #1d3c3e;
 }
 
 .avatar[data-size="n"] {
@@ -16,4 +15,5 @@
 .avatar img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
