@@ -44,8 +44,15 @@ export default function Feed() {
             <input type="text" />
             <button>O</button>
           </div>
-          {postData.map((item, index) => (
-            <Post key={index} post={item} />
+          {postData.map((item) => (
+            <Post
+              key={item.id}
+              title={item.title}
+              text={item.text}
+              banner={item.banner}
+              likes={item.likes}
+              comments={item.comments}
+            />
           ))}
         </div>
 

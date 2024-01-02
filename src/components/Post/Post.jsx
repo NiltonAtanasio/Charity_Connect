@@ -3,35 +3,35 @@ import "./Post.css";
 import Avatar from "../Avatar/Avatar";
 import { FaHeart, FaComments, FaBookmark } from "react-icons/fa";
 
-export default function Post({ post }) {
+export default function Post({ props }) {
   return (
     <div className="post">
       <div className="post__info">
-        <Avatar image={post.userAvatar} />
-        <h3>{post.name}</h3>
-        <p>- {post.createdAt}</p>
+        <Avatar image={props.userAvatar} />
+        <h3>{props.name}</h3>
+        <p>- {props.createdAt}</p>
       </div>
       <div className="post__conf">
         <div className="top__bar__icon"></div>
       </div>
 
       <div className="post__text">
-        <p>{post.text}</p>
+        <p>{props.text}</p>
       </div>
 
       <div className="post__image">
-        <img src={post.image} alt="imagem" />
+        <img src={props.image} alt="imagem" />
       </div>
 
       <div className="post__bottom">
         <div>
           <FaHeart className="top__bar__icon" />
-          <p>{post.likes} - Likes</p>
+          <p>{props.likes} - Likes</p>
         </div>
 
         <div>
           <FaComments className="top__bar__icon" />
-          <p>{post.comments} - comments</p>
+          <p>{props.comments} - comments</p>
         </div>
 
         <div>
