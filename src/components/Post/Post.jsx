@@ -2,13 +2,20 @@ import React from "react";
 import "./Post.css";
 import Avatar from "../Avatar/Avatar";
 import { FaHeart, FaComments, FaBookmark } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 
-export default function Post({ props }) {
+export default function Post(props) {
+  const navigate = useNavigate();
+
   return (
     <div className="post">
       <div className="post__info">
-        <Avatar image={props.userAvatar} />
-        <h3>{props.name}</h3>
+        <Avatar
+          image={props.avatar}
+          onClick={() => navigate(`/perfil/${props.id}`)}
+        />
+
+        <h3 onClick={() => navigate(`/perfil/${props.id}`)}>{props.name}</h3>
         <p>- {props.createdAt}</p>
       </div>
       <div className="post__conf">
@@ -20,7 +27,11 @@ export default function Post({ props }) {
       </div>
 
       <div className="post__image">
-        <img src={props.image} alt="imagem" />
+        <img
+          onClick={() => navigate(`/post/${props.id}`)}
+          src={props.image}
+          alt="imagem"
+        />
       </div>
 
       <div className="post__bottom">
@@ -29,7 +40,7 @@ export default function Post({ props }) {
           <p>{props.likes} - Likes</p>
         </div>
 
-        <div>
+        <div onClick={() => navigate(`/post/${props.id}`)}>
           <FaComments className="top__bar__icon" />
           <p>{props.comments} - comments</p>
         </div>

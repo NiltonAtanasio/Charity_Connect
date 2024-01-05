@@ -1,17 +1,28 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./Feed.css";
 import Topbar from "../../components/Topbar/Topbar.jsx";
 import Post from "../../components/Post/Post";
 import Main from "../../components/Main/Main";
-
-import { postData } from "../../components/Post/postData.js";
+import postData from "./postData.json";
 
 import { HiCursorClick } from "react-icons/hi";
 import { AiFillMessage } from "react-icons/ai";
 import { RiUserFollowFill } from "react-icons/ri";
 import Avatar from "../../components/Avatar/Avatar";
-
+import { Link } from "react-router-dom";
+// import { getAllPosts } from "../../services/postService.js";
 export default function Feed() {
+  // const [posts, setPosts] = useState([]);
+
+  // async function findPost() {
+  //   const postsResponse = await getAllPosts();
+  //   setPosts(postsResponse.data.results);
+  // }
+
+  // useEffect(() => {
+  //   findPost();
+  // }, []);
+
   return (
     <div>
       <Topbar />
@@ -47,11 +58,14 @@ export default function Feed() {
           {postData.map((item) => (
             <Post
               key={item.id}
-              title={item.title}
+              id={item.id}
+              name={item.userName}
+              avatar={item.userAvatar}
               text={item.text}
-              banner={item.banner}
               likes={item.likes}
               comments={item.comments}
+              image={item.image}
+              createdAt={item.createdAt}
             />
           ))}
         </div>
