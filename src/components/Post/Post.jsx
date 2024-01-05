@@ -3,6 +3,11 @@ import "./Post.css";
 import Avatar from "../Avatar/Avatar";
 import { FaHeart, FaComments, FaBookmark } from "react-icons/fa";
 
+import { useNavigate } from "react-router-dom";
+
+export default function Post(props) {
+  const navigate = useNavigate();
+
   return (
     <div className="post">
       <div className="post__info">
