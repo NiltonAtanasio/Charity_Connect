@@ -1,6 +1,6 @@
 import React from "react";
 import "./Topbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../images/logo.png";
 import Avatar from "../Avatar/Avatar";
 import { IoMdNotifications, IoMdMenu } from "react-icons/io";
@@ -12,24 +12,24 @@ export default function Topbar() {
   return (
     <div className="top__bar">
       <div className="container__logo">
-        <Link to={"/feed"}>
+        <NavLink to={"/feed"}>
           <div>
             <img src={logo} alt="" />
           </div>
-        </Link>
+        </NavLink>
       </div>
       <div className="container__icon">
         <IoMdNotifications className="top__bar__icon" />
 
-        <Link to={"/feed"}>
+        <NavLink to={"/feed"}>
           <FaHome className="top__bar__icon" />
-        </Link>
+        </NavLink>
 
         <FaUserFriends className="top__bar__icon" />
 
-        <Link to={"/perfil/1"}>
+        <NavLink to={"/perfil/1"}>
           <Avatar />
-        </Link>
+        </NavLink>
 
         <AiFillMessage className="top__bar__icon" />
 
