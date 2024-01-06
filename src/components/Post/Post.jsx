@@ -1,5 +1,6 @@
 import React from "react";
 import "./Post.css";
+import { PostStyled } from "./PostStyled";
 import Avatar from "../Avatar/Avatar";
 import { FaHeart, FaComments, FaBookmark } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +9,7 @@ export default function Post(props) {
   const navigate = useNavigate();
 
   return (
-    <div className="post">
+    <PostStyled>
       <div className="post__info">
         <Avatar image={props.avatar} link={`/perfil/${props.id}`} />
 
@@ -47,6 +48,6 @@ export default function Post(props) {
           <p>2 - favorite</p>
         </div>
       </div>
-    </div>
+    </PostStyled>
   );
 }
