@@ -10,10 +10,7 @@ export default function Post(props) {
   return (
     <div className="post">
       <div className="post__info">
-        <Avatar
-          image={props.avatar}
-          onClick={() => navigate(`/perfil/${props.id}`)}
-        />
+        <Avatar image={props.avatar} link={`/perfil/${props.id}`} />
 
         <h3 onClick={() => navigate(`/perfil/${props.id}`)}>{props.name}</h3>
         <p>- {props.createdAt}</p>
