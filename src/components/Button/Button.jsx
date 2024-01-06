@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { ButtonStyled } from "./ButtonStyled.jsx";
 
 export default function Button({ link, type, text }) {
+  const navigate = useNavigate();
+
   return (
-    <ButtonStyled type={type}>
-      <Link to={`/${link}`}>{text}</Link>
+    <ButtonStyled type={type} onClick={() => navigate(link)}>
+      {text}
     </ButtonStyled>
   );
 }

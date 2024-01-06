@@ -36,7 +36,7 @@ export default function Signup() {
 
         <Input type="url" name="avatar" placeholder="Your avatar" required />
 
-        <Button type="subimit" text="Register" link="login" />
+        <Button type="submit" text="Register" link="/login" />
       </form>
     </CadastroCard>
   );

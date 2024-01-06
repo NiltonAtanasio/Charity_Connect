@@ -24,7 +24,7 @@ export default function Signin() {
           required
           min={6}
         />
-        <Button type="submit" text="Login" link="feed" />
+        <Button type="submit" text="Login" link="/feed" />
       </form>
     </CadastroCard>
   );

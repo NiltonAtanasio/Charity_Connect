@@ -18,7 +18,7 @@ export default function Home() {
             O grupo CharityConnect ajuda as pessoas a se conectarem, encontrarem
             comunidades e expandirem seu alcance
           </h1>
-          <Button type="button" text="register" link="register" />
+          <Button type="button" text="register" link="/register" />
         </div>
         <div className="main__image">
           <img src={logo} alt="" />
