@@ -1,4 +1,5 @@
 import React from "react";
+import { AvatarStyled } from "./AvatarStyled";
 import "./Avatar.css";
 import placeholder from "../../images/placeholder.png";
 import { useNavigate } from "react-router-dom";
@@ -12,8 +13,8 @@ export default function Avatar({
   const navigate = useNavigate();
 
   return (
-    <div className="avatar" data-size={size} onClick={() => navigate(link)}>
+    <AvatarStyled className="avatar" size={size} onClick={() => navigate(link)}>
       <img src={image} alt={alternate} />
-    </div>
+    </AvatarStyled>
   );
 }
