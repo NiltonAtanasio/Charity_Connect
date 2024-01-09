@@ -34,7 +34,7 @@ export default function Topbar() {
 
   function onSearch(data) {
     const { title } = data;
-    // navigate(`/search/${title}`);
+    navigate(`/search/${title}`);
     reset();
   }
   return (
