@@ -1,7 +1,7 @@
 import { InputStyled } from "./InputStyled.jsx";
 
-export default function Input({ type, placeholder, register }) {
+export default function Input({ type, placeholder, register, name }) {
   return (
-    <InputStyled type={type} placeholder={placeholder} register={register} />
+    <InputStyled type={type} placeholder={placeholder} {...register(name)} />
   );
 }
