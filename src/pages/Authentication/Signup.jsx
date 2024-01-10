@@ -1,42 +1,57 @@
-import React from "react";
-
 import { CadastroCard } from "./AuthtenticationStyled.jsx";
 import Input from "../../components/Input/Input.jsx";
 import Button from "../../components/Button/Button.jsx";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { signupSchema } from "../../schema/signupSchema.js";
+
+function inHandleSubimit(data) {
+  console.log(data);
+}
 
 export default function Signup() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: zodResolver(signupSchema) });
   return (
     <CadastroCard>
-      <form>
+      <form onSubmit={handleSubmit(inHandleSubimit)}>
         <h2>Create an Account</h2>
-        <Input type="text" name="name" placeholder="Your first name" required />
-
         <Input
           type="text"
-          name="userName"
-          placeholder="Your last name"
+          name="name"
+          placeholder="Your complet name"
           required
+          register={register}
         />
-        <Input type="email" name="email" placeholder="Your e-mail" required />
-
+        {errors.name && <p>{errors.name.message}</p>}
+        <Input
+          type="email"
+          name="email"
+          placeholder="Your e-mail"
+          required
+          register={register}
+        />
+        {errors.email && <p>{errors.email.message}</p>}
         <Input
           type="password"
           name="password"
           placeholder="Password"
           required
-          min={6}
+          register={register}
         />
+        {errors.password && <p>{errors.password.message}</p>}
         <Input
           type="password"
           name="confirmPassword"
           placeholder="Confirm password"
           required
-          min={6}
+          register={register}
         />
-
-        <Input type="url" name="avatar" placeholder="Your avatar" required />
-
-        <Button type="submit" text="Register" link="/login" />
+        {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
+        <Button type="submit" text="Register" />
       </form>
     </CadastroCard>
   );
