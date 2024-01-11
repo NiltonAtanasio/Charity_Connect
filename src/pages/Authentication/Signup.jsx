@@ -5,22 +5,29 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signupSchema } from "../../schema/signupSchema.js";
 import { signup } from "../../services/userService.js";
-
-async function inHandleSubimit(data) {
-  try {
-    const response = await signup(data);
-    console.log(response);
-  } catch (error) {
-    console.log(error);
-  }
-}
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+  const navigate = useNavigate();
+
+  async function inHandleSubimit(data) {
+    try {
+      const response = await signup(data);
+      Cookies.set("token", response.data.token, { expires: 1 });
+      console.log(response);
+      navigate("/feed");
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm({ resolver: zodResolver(signupSchema) });
+
   return (
     <CadastroCard>
       <form onSubmit={handleSubmit(inHandleSubimit)}>

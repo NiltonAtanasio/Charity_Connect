@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const baseURL = "https://api-charity-connect.onrender.com";
+const baseURL = "http://localhost:8080/post";
 
 export function getAllPosts() {
-  const response = axios.get(`${baseURL}/post`);
+  const response = axios.get(baseURL);
   return response;
 }

@@ -3,25 +3,25 @@ import "./Feed.css";
 import Topbar from "../../components/Topbar/Topbar.jsx";
 import Post from "../../components/Post/Post";
 import Main from "../../components/Main/Main";
-import postData from "./postData.json";
-
 import { HiCursorClick } from "react-icons/hi";
 import { AiFillMessage } from "react-icons/ai";
 import { RiUserFollowFill } from "react-icons/ri";
 import Avatar from "../../components/Avatar/Avatar";
-import { Link } from "react-router-dom";
-// import { getAllPosts } from "../../services/postService.js";
+import Cookies from "js-cookie";
+import { getAllPosts } from "../../services/postService.js";
+
 export default function Feed() {
-  // const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-  // async function findPost() {
-  //   const postsResponse = await getAllPosts();
-  //   setPosts(postsResponse.data.results);
-  // }
+  async function findPost() {
+    const postsResponse = await getAllPosts();
+    setPosts(postsResponse.data.results);
+  }
 
-  // useEffect(() => {
-  //   findPost();
-  // }, []);
+  useEffect(() => {
+    findPost();
+    console.log(Cookies.get("token"));
+  }, []);
 
   return (
     <div>
@@ -55,7 +55,7 @@ export default function Feed() {
             <input type="text" />
             <button>O</button>
           </div>
-          {postData.map((item) => (
+          {posts.map((item) => (
             <Post
               key={item.id}
               id={item.id}
