@@ -4,9 +4,15 @@ import Button from "../../components/Button/Button.jsx";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { signupSchema } from "../../schema/signupSchema.js";
+import { signup } from "../../services/userService.js";
 
-function inHandleSubimit(data) {
-  console.log(data);
+async function inHandleSubimit(data) {
+  try {
+    const response = await signup(data);
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export default function Signup() {
